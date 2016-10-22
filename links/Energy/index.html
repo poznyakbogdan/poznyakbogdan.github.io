@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Energy</title>
+	<link rel="stylesheet" type="text/css" href="Energy.css">
+</head>
+<body>
+	<div id="MyContainer">
+		<div class="CalculateContainer">
+			<h1>Рассчет колличества теплоты для отопления жилых и промышленных помещений при различных температурах</h1>
+			<ul caption="Требования">
+				<li>Значения вводить в МегаВаттах</li>
+				<li>Использовать точку в качестве разделителя целой и дробной части</li>
+			</ul>
+			<table id="InputTable">
+				<tr>
+					<td>
+						<p class="Index1">Q</p>
+					</td>
+					<td>
+						<p class="Index2">Q</p>
+					</td>
+					<td>
+						<p class="Index3">Q</p>
+					</td>
+					<td>
+						<p class="Index4">Q</p>
+					</td>
+					<td>
+						<p class="Index5">Q</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input id="InputOfQgv" type="text" name="" placeholder="Введите значение" value="3">
+					</td>
+					<td>
+						<input id="InputOfQprot" type="text" name="" placeholder="Введите значение" value="3">
+					</td>
+					<td>
+						<input id="InputOfQgilobsot" type="text" name="" placeholder="Введите значение" value="3">
+					</td>
+					<td>
+						<input id="InputOfQprv" type="text" name="" placeholder="Введите значение" value="3">
+					</td>
+					<td>
+						<input id="InputOfQgilobsv" type="text" name="" placeholder="Введите значение" value="3">
+					</td>
+				</tr>
+			</table>	
+			<button onclick="DrawOutput()">
+				Рассчитать
+			</button>
+			<table id="OutputTable">
+				
+			</table>
+			
+		</div>
+	<script type="text/javascript" src="Energy.js"></script>
+</body>
+</html>

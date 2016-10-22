@@ -1,0 +1,36 @@
+body{
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+button{
+	width: 30px;
+	height: 30px;
+	border: 2px solid black;
+	border-radius: 50%;
+	margin-left: 10px;
+	font-weight: bolder;
+	font-size: 16px;
+}
+p{
+	padding-bottom: 3px;
+	border-bottom: 2px solid black;
+	text-align: center;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+}
+.container{
+	margin: 25px auto;
+	width: auto;
+	text-align: center;
+}
+#btn-size, #btn-host{
+	background: transparent;
+	width: 180px;
+	height: 60px;
+	font-size: 20px;
+	font-family: Arial , sans-serif;
+	border: 3px solid grey;
+	border-radius: 10px;
+	font-weight: bold;
+	margin: 0;
+}

@@ -1,0 +1,67 @@
+.PageLayer{
+	width: 100%;
+	height: auto;
+	background: red;
+	margin: 0 auto;
+}
+.WidhtOfMainBlocks{
+	width: 100%;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+.Header{
+	height: 765px;
+	background: url("../images/Header_Background.png") 100% no-repeat;
+	background-size: cover;
+	box-shadow: 0px 0px 0px 390px rgba(0, 0, 0, .55) inset;
+}
+.Service{
+	height: 576px;
+	background: #ffffff;	
+}
+.Join{
+	height: 577px;
+	background: url('../images/JoinBg.png') 100% no-repeat;
+	background-size: cover;
+	box-shadow: 0px 0px 0px 390px rgba(0, 0, 0, .55) inset;
+}
+.Process{
+	height: 840px;
+	background: #ffffff;
+}
+.Work{
+	height: auto;
+	background: transparent;
+}
+
+.Portfolio{
+	height: auto;
+	background: #ffffff; 
+}
+.Team{
+	height: auto;
+	background: #f2f2f2;
+	text-align: center;
+}
+.Map{
+	height: 336px;
+	background: yellow;
+}	
+.Footer{
+	height: 212px;
+	background: url("../images/FooterBg.png");
+	background-size: cover;
+	box-shadow: 0px 0px 0px 390px rgba(0, 0, 0, .55) inset;
+}	
+.PageDownLink{
+	display: block;
+	position: absolute;
+	bottom: 27px;
+	left: 50%;
+	transform-origin: 50% 50%;
+	transform:  translateX(-50%);
+	width: 30px;
+	height: 30px;
+	background: transparent;
+}

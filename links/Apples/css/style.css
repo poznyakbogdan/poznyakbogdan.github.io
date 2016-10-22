@@ -1,0 +1,94 @@
+.ContentContainer{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2376px;
+	height: 1792px;
+	background: url("../images/background.png");
+	transform-origin: 0% 0%;
+	transform: scale(0.35);
+	-moz-transform-origin: 0% 0%;
+	-moz-transform: scale(0.35);
+	-ms-transform-origin: 0% 0%;
+	-ms-transform: scale(0.35);
+	-webkit-transform-origin: 0% 0%;
+	-webkit-transform: scale(0.35);
+}
+.ContentContainerApple{
+	position: absolute;
+	width: 216px;
+	height: 237px;
+	background: url(../images/apple.png);
+	transition-property: all;
+	transition-timing-function: ease-in;
+	transition-duration: .3s;
+	-moz-transition-property: all;
+	-moz-transition-timing-function: ease-in;
+	-moz-transition-duration: .3s;
+	-ms-transition-property: all;
+	-ms-transition-timing-function: ease-in;
+	-ms-transition-duration: .3s;
+	-webkit-transition-property: all;
+	-webkit-transition-timing-function: ease-in;
+	-webkit-transition-duration: .3s;
+}
+.Apple1{
+	top: 881px;
+	left: 271px;
+}
+.Apple2{
+	top: 1164px;
+	left: 400px;
+}
+.Apple3{
+	top: 450px;
+	left: 410px;
+}
+.Apple4{
+	top: 780px;
+	left: 578px;
+}
+.Apple5{
+	top: 551px;
+	left: 760px;
+}
+.Apple6{
+	top: 928px;
+	left: 900px;
+}
+.Apple7{
+	top: 327px;
+	left: 966px;
+}
+.Apple8{
+    top: 720px;
+    left: 1114px;
+}
+.Apple9{
+    top: 380px;
+    left: 1210px;
+}
+.Apple10{
+	top: 510px;
+    left: 1484px;
+}
+.Apple11{
+    top: 950px;
+    left: 1470px;
+}
+.Apple12{
+    top: 1170px;
+    left: 1590px;
+}
+.Apple13{
+    top: 830px;
+    left: 1790px;
+}
+.Apple14{
+    top: 1140px;
+    left: 1880px;
+}
+.Apple1:hover, .Apple2:hover, .Apple3:hover, .Apple4:hover, .Apple5:hover, .Apple6:hover, .Apple7:hover,
+ .Apple8:hover, .Apple9:hover, .Apple10:hover, .Apple11:hover, .Apple12:hover, .Apple13:hover, .Apple14:hover{
+	background: url(../images/applecolor.png);
+}

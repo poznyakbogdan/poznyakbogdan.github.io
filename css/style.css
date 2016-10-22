@@ -1,0 +1,80 @@
+.Header{
+	background: url("../images/Header_Background.png") 100% no-repeat;
+	box-shadow: 0px 0px 0px 390px rgba(0, 0, 0, .55) inset;
+}
+.HeaderLogoContent{
+	height: 60px;
+	width: 100px;
+	background: red;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+.HeaderLogoContent:before{
+	content: "";
+	height: 60px;
+	width: 100px;
+	position: absolute;
+	transform-origin: 50% 50%;
+	transform: rotate(60deg);
+	margin-left: -2px;
+}
+.HeaderLogoContent:after{
+	content: "";
+	height: 60px;
+	width: 100px;
+	position: absolute;
+	transform-origin: 50% 50%;
+	transform: rotate(-60deg);
+}
+$MainColor: #fc645f;
+.PropertyOfHeaderLogoContent{
+	height: 32px;
+	width: 53px;
+	background: $MainColor;
+	position: absolute;
+	border-radius: 5px;
+}
+@mixin rotate($deg){
+	transform-origin: 50% 50%;
+	transform: rotate($deg);	
+}
+.HeaderLogoContent{
+	@extend .PropertyOfHeaderLogoContent;
+	top: 100px;
+	left: 100px;
+}
+.HeaderLogoContent:before{
+	content: "";
+	@extend .PropertyOfHeaderLogoContent;
+	@include rotate(60deg);
+}
+.HeaderLogoContent:after{
+	content: "";
+	@extend .PropertyOfHeaderLogoContent;
+	@include rotate(-60deg);
+}
+.HeaderMenuContainer{
+	position: absolute;
+	top: 50px;
+	left: 650px;
+	background: transparent;
+	height: 40px;
+
+}
+.HeaderMenuContainer li{
+	display: inline-block;
+	height: 40px;
+	background: red;
+	padding: 0 20px;
+	line-height: 35px;
+	border-radius: 5px;
+}
+.HeaderMenuContainer li p{
+	display: inline;
+	border-bottom: 2px solid black;
+}
+.HeaderMenuContainer li:hover{
+	background: rgba(0, 0, 0, 0.2);
+	opacity: .5;
+}

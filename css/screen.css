@@ -1,0 +1,2541 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: "PFEncoreSansPro-Thin";
+  src: url("../fonts/Encore/PFEncoreSansPro-Thin.otf");
+}
+@font-face {
+  font-family: "PFEncoreSansPro-Bold";
+  src: url("../fonts/Encore/PFEncoreSansPro-Bold.otf");
+}
+@font-face {
+  font-family: "GothaProBol";
+  src: url("../fonts/GothamPro/GothaProBol.otf");
+}
+@font-face {
+  font-family: "PFEncoreSansPro-Light";
+  src: url("../fonts/Encore/PFEncoreSansPro-Light.otf");
+}
+@font-face {
+  font-family: "PFEncoreSansPro-Medium";
+  src: url("../fonts/Encore/PFEncoreSansPro-Medium.otf");
+}
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 27, ../sass/screen.scss */
+.PropertyOfHeaderLogoContent, .HeaderNavbarLogoContent, .HeaderNavbarLogoContent:before, .HeaderNavbarLogoContent:after, .FooterLogo, .FooterLogo:before, .FooterLogo:after {
+  height: 32px;
+  width: 53px;
+  background: #fc645f;
+  position: absolute;
+  border-radius: 2px;
+}
+
+/* line 57, ../sass/screen.scss */
+.HeaderNavbar {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  background: transparent;
+}
+
+/* line 65, ../sass/screen.scss */
+.HeaderNavbarLogoContent {
+  top: 5px;
+  left: 180px;
+}
+
+/* line 70, ../sass/screen.scss */
+.HeaderNavbarLogoContent:before {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(60deg);
+  z-index: 1;
+  background: inherit;
+}
+
+/* line 77, ../sass/screen.scss */
+.HeaderNavbarLogoContent:after {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(-60deg);
+  z-index: 1;
+  background: inherit;
+}
+
+/* line 84, ../sass/screen.scss */
+.HeaderNavbarLogoContentLetter {
+  position: absolute;
+  width: 100%;
+  top: -1px;
+  left: 1px;
+  z-index: 2;
+  text-align: center;
+  font-family: "PFEncoreSansPro-Bold", sans-serif, Arial;
+  font-size: 36px;
+  color: #0c252d;
+}
+
+/* line 95, ../sass/screen.scss */
+.HeaderNavbarLogoContentName {
+  position: absolute;
+  top: 5px;
+  left: 75px;
+  font-family: "GothaProBol";
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* line 103, ../sass/screen.scss */
+.HeaderNavbarMenuContainer {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 10px;
+  right: 70px;
+  background: transparent;
+  height: 40px;
+  padding: 0px;
+}
+
+/* line 114, ../sass/screen.scss */
+.HeaderNavbarMenuContainer li {
+  display: inline;
+  height: 35px;
+  background: transparent;
+  margin: 0 22px;
+  line-height: 35px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-family: "PFEncoreSansPro-Thin", sans-serif, Arial;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+/* line 129, ../sass/screen.scss */
+.HeaderNavbarMenuContainer li:hover {
+  background: transparent;
+  border-bottom: 4px solid #fc645f;
+  color: #fc645f;
+}
+
+/* line 135, ../sass/screen.scss */
+.HeaderContent {
+  width: 945px;
+  height: 495px;
+  position: absolute;
+  bottom: -11px;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 0%);
+  background: transparent;
+}
+
+/* line 144, ../sass/screen.scss */
+.TitleStyle, .HeaderContentTitle, .JoinContentTitle {
+  text-align: center;
+  font-size: 51px;
+  font-family: "PFEncoreSansPro-Bold", sans-serif, Arial;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* line 151, ../sass/screen.scss */
+.UnderTitleStyle, .ServiceComtainer .ServiceComtainerTitle, .ProcessTitleText, .StepsFormTitle, .WorkLandingTitle, .WorkLandingDescription, .WorkAdvertisingDescription, .PortfolioTitle, .TeamTitle {
+  display: inline;
+  font-size: 28px;
+  font-family: "PFEncoreSansPro-Medium", sans-serif, Arial;
+  text-transform: uppercase;
+  color: #868686;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #adadad;
+}
+
+/* line 160, ../sass/screen.scss */
+.StyleOfTextUnderTitle, .ServiceComtainer .ServiceComtainerText, .ProcessContainerText {
+  color: #b2b2b2;
+  font-family: "PFEncoreSansPro-Light", sans-serif, Arial;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* line 166, ../sass/screen.scss */
+.TextStyle, .ServiceContainerList .ServiceContainerListContent p, .StepsFormText, .WorkLandingContentText, .WorkAdvertisingContentText, .TeamPersonalText {
+  text-align: center;
+  font-size: 15px;
+  font-family: "PFEncoreSansPro-Light", sans-serif, Arial;
+  color: #b2b2b2;
+}
+
+/* line 175, ../sass/screen.scss */
+.HeaderStraightSide, .HeaderContentTitle:before, .HeaderContentTitle:after {
+  content: "";
+  width: 107px;
+  height: 8px;
+  background: #504d4d;
+  position: absolute;
+  top: 20px;
+}
+
+/* line 184, ../sass/screen.scss */
+.HeaderContentTitle:before {
+  left: -5px;
+}
+
+/* line 188, ../sass/screen.scss */
+.HeaderContentTitle:after {
+  right: -5px;
+  background: #7d7d7a;
+}
+
+/* line 194, ../sass/screen.scss */
+.HeaderContentTitle span {
+  color: #fc645f;
+}
+
+/* line 197, ../sass/screen.scss */
+.HeaderContentText {
+  text-align: center;
+  font-family: "PFEncoreSansPro-Light", sans-serif, Arial;
+  font-size: 24px;
+  color: #fff;
+  margin: 15px 0 0;
+}
+
+/* line 208, ../sass/screen.scss */
+.HeaderContentMouse {
+  height: 27px;
+  width: 45px;
+  border: 3px solid #7d7d7d;
+  position: relative;
+  top: 8px;
+  left: 590px;
+  background: transparent;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
+  overflow: hidden;
+}
+
+/* line 222, ../sass/screen.scss */
+.HeaderContentMouse:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background: #7d7d7d;
+  position: relative;
+  top: 12px;
+  left: 4px;
+}
+
+/* line 232, ../sass/screen.scss */
+.HeaderContentMouse:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 36px;
+  background: transparent;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-right: inherit;
+  position: relative;
+  top: -6px;
+  left: 2px;
+}
+
+/* line 245, ../sass/screen.scss */
+.ButtonStyle, .HeaderContentButton, .WorkLandingContentButton, .WorkAdvertisingContentButton, .PortfolioButton {
+  color: #fc645f;
+  font-family: "PFEncoreSansPro-Light", sans-serif, Arial;
+  font-size: 24px;
+  cursor: pointer;
+  display: inline-block;
+  width: 202px;
+  height: 52px;
+  border: 2px solid #fc645f;
+  background: transparent;
+  border-radius: 5px;
+}
+
+/* line 257, ../sass/screen.scss */
+.HeaderContentButton {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translateX(-50%);
+}
+
+/* line 265, ../sass/screen.scss */
+.HeaderContentButton:hover {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* line 269, ../sass/screen.scss */
+.HeaderContentMouseMoove {
+  background: transparent;
+  height: 500px;
+  width: 90px;
+  border-top: 2px dashed #7d7d7d;
+  border-right: 2px dashed #7d7d7d;
+  border-top-right-radius: 42px;
+  position: relative;
+  top: -10px;
+  left: 638px;
+}
+
+/* line 281, ../sass/screen.scss */
+.Header .PageDownLink svg circle {
+  fill: #fc645f;
+}
+/* line 284, ../sass/screen.scss */
+.Header .PageDownLink svg line {
+  stroke: #ffffff;
+}
+
+/* line 289, ../sass/screen.scss */
+.Join .PageDownLink svg circle {
+  fill: #fc645f;
+}
+/* line 292, ../sass/screen.scss */
+.Join .PageDownLink svg line {
+  stroke: #ffffff;
+}
+
+/* line 297, ../sass/screen.scss */
+.Header .PageDownLink:hover svg circle, .Join .PageDownLink:hover svg circle {
+  fill: transparent;
+}
+/* line 300, ../sass/screen.scss */
+.Header .PageDownLink:hover svg line, .Join .PageDownLink:hover svg line {
+  stroke: #ffffff;
+}
+
+/* line 305, ../sass/screen.scss */
+.PageDownLink:hover svg circle {
+  fill: #fc645f;
+}
+/* line 308, ../sass/screen.scss */
+.PageDownLink:hover svg line {
+  stroke: #ffffff;
+}
+
+/* line 313, ../sass/screen.scss */
+.ServiceComtainer {
+  width: 520px;
+  height: 100px;
+  padding-top: 40px;
+  margin: 0px auto 0;
+  background: transparent;
+  text-align: center;
+}
+/* line 323, ../sass/screen.scss */
+.ServiceComtainer .ServiceComtainerTitle span {
+  color: #fc645f;
+}
+
+/* line 332, ../sass/screen.scss */
+.ServiceContainerList {
+  width: 950px;
+  height: 240px;
+  margin: 85px auto 100px;
+  background: transparent;
+}
+/* line 337, ../sass/screen.scss */
+.ServiceContainerList .ServiceContainerListContent {
+  display: inline-block;
+  width: 210px;
+  height: 100%;
+  background: inherit;
+  margin: 0 10px;
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+}
+/* line 346, ../sass/screen.scss */
+.ServiceContainerList .ServiceContainerListContent div.ServiceContainerListContentContainer {
+  width: 96px;
+  height: 53px;
+  border-right: 4px solid #fe8682;
+  border-left: 4px solid #fe8682;
+  position: relative;
+  top: 30px;
+  left: 53px;
+  border-radius: 4px;
+  background: #fc645f;
+  z-index: 2;
+}
+/* line 358, ../sass/screen.scss */
+.ServiceContainerList .ServiceContainerListContent div.ServiceContainerListContentContainer:before {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(60deg);
+  display: block;
+  width: 91px;
+  height: 100%;
+  border-right: inherit;
+  border-left: inherit;
+  position: absolute;
+  left: -2px;
+  background: inherit;
+  z-index: 1;
+}
+/* line 371, ../sass/screen.scss */
+.ServiceContainerList .ServiceContainerListContent div.ServiceContainerListContentContainer:after {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(-60deg);
+  display: block;
+  width: 91px;
+  height: 100%;
+  border-right: inherit;
+  border-left: inherit;
+  position: absolute;
+  left: -2px;
+  background: inherit;
+  z-index: 1;
+}
+/* line 384, ../sass/screen.scss */
+.ServiceContainerList .ServiceContainerListContent h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "PFEncoreSansPro-Medium", sans-serif, Arial;
+  font-size: 20px;
+  color: #868686;
+  position: relative;
+  top: 75px;
+}
+/* line 393, ../sass/screen.scss */
+.ServiceContainerList .ServiceContainerListContent h3 span {
+  display: block;
+  width: 58px;
+  height: 1px;
+  background: #adadad;
+  position: relative;
+  top: 10px;
+  left: 75px;
+}
+/* line 403, ../sass/screen.scss */
+.ServiceContainerList .ServiceContainerListContent p {
+  position: relative;
+  bottom: -100px;
+  padding-bottom: 50px;
+}
+
+/* line 411, ../sass/screen.scss */
+.ServiceContainerListContentContainerRocket, .ServiceContainerListContentContainerDisplay, .ServiceContainerListContentContainerStatistic, .ServiceContainerListContentContainerMusic {
+  position: absolute;
+  width: 43px;
+  height: 40px;
+  background-image: url(../images/sprite.png);
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 421, ../sass/screen.scss */
+.ServiceContainerListContentContainerRocket {
+  background-position: -84px -29px;
+}
+
+/* line 424, ../sass/screen.scss */
+.ServiceContainerListContentContainerDisplay {
+  background-position: -1px -29px;
+}
+
+/* line 427, ../sass/screen.scss */
+.ServiceContainerListContentContainerStatistic {
+  background-position: -124px -29px;
+}
+
+/* line 430, ../sass/screen.scss */
+.ServiceContainerListContentContainerMusic {
+  background-position: -46px -30px;
+}
+
+/* line 433, ../sass/screen.scss */
+.ServiceContainerListContent:nth-child(1):hover, .ServiceContainerListContent:nth-child(2):hover, .ServiceContainerListContent:nth-child(3):hover, .ServiceContainerListContent:nth-child(4):hover {
+  transform: scale(1.1);
+  border-bottom: 12px solid #fc645f;
+  border-radius: 15px;
+}
+
+/* line 438, ../sass/screen.scss */
+.ServiceContainerListContentImage {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: 3;
+}
+
+/* line 445, ../sass/screen.scss */
+li:nth-child(2) > div {
+  background: transparent !important;
+}
+
+/* line 448, ../sass/screen.scss */
+.JoinContent {
+  width: 924px;
+  height: 368px;
+  background: transparent;
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 458, ../sass/screen.scss */
+.JoinContentButton {
+  position: absolute;
+  top: 210px;
+}
+
+/* line 462, ../sass/screen.scss */
+.JoinContentTitle {
+  margin: 125px 0 0;
+}
+/* line 465, ../sass/screen.scss */
+.JoinContentTitle span {
+  color: #fc645f;
+}
+
+/* line 469, ../sass/screen.scss */
+.ProcessTitleContainer {
+  width: 520px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* line 478, ../sass/screen.scss */
+.ProcessTitleText span {
+  color: #fc645f;
+}
+
+/* line 485, ../sass/screen.scss */
+.ProcessSteps {
+  width: 800px;
+  height: 550px;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 0%);
+  background: transparent;
+}
+
+/* line 494, ../sass/screen.scss */
+.StepsForm, .StepsForm:before, .StepsForm:after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 175px;
+  height: 99px;
+  border-right: 1px solid #adadad;
+  border-left: 1px solid #adadad;
+  text-align: center;
+}
+
+/* line 504, ../sass/screen.scss */
+.StepsForm:before {
+  content: "";
+  width: 169px;
+  height: 102px;
+  top: -3px;
+  left: 0px;
+  transform-origin: 50% 50%;
+  transform: rotate(60deg);
+}
+
+/* line 513, ../sass/screen.scss */
+.StepsForm:after {
+  content: "";
+  width: 175px;
+  height: 99px;
+  top: 0px;
+  left: 0px;
+  transform-origin: 50% 50%;
+  transform: rotate(-60deg);
+}
+
+/* line 522, ../sass/screen.scss */
+.Step1 {
+  border-right: 4px solid #fc645f;
+  height: 100px;
+  width: 176px;
+}
+
+/* line 527, ../sass/screen.scss */
+.Step1:before {
+  border-left: 4px solid #fc645f;
+}
+
+/* line 530, ../sass/screen.scss */
+.Step1:after {
+  border-right: 4px solid #fc645f;
+  height: 100px;
+}
+
+/* line 534, ../sass/screen.scss */
+.Step2 {
+  border-left: 4px solid #fc645f;
+  width: 179px;
+}
+
+/* line 538, ../sass/screen.scss */
+.Step2:before {
+  border-left: 4px solid #fc645f;
+  width: 174px;
+}
+
+/* line 542, ../sass/screen.scss */
+.Step3 {
+  border-left: 4px solid #fc645f;
+  border-right: 4px solid #fc645f;
+  width: 178px;
+}
+
+/* line 547, ../sass/screen.scss */
+.Step3:before {
+  border-left: 4px solid #fc645f;
+  width: 170px;
+  top: -1px;
+}
+
+/* line 552, ../sass/screen.scss */
+.Step3:after {
+  border-right: 4px solid #fc645f;
+  width: 175px;
+}
+
+/* line 556, ../sass/screen.scss */
+.Step4, .Step4:before, .Step4:after {
+  border-right: 4px solid #fc645f;
+}
+
+/* line 559, ../sass/screen.scss */
+.Step4:before {
+  border-left: 4px solid #fc645f;
+  border-right: 4px solid #fc645f;
+}
+
+/* line 563, ../sass/screen.scss */
+.Step4:after {
+  border-right: 4px solid #fc645f;
+}
+
+/* line 567, ../sass/screen.scss */
+.Step1 {
+  top: 148px;
+  left: 0px;
+}
+
+/* line 571, ../sass/screen.scss */
+.Step2 {
+  top: 200px;
+  left: 267px;
+}
+
+/* line 575, ../sass/screen.scss */
+.Step3 {
+  top: 50px;
+  left: 355px;
+}
+
+/* line 579, ../sass/screen.scss */
+.Step4, .Step4:before, .Step4:after {
+  height: 152px;
+  width: 260px;
+  top: 151px;
+  left: 526px;
+}
+
+/* line 585, ../sass/screen.scss */
+.Step4:before {
+  content: "";
+  height: 150px;
+  width: 258px;
+  top: 0px;
+  left: 0px;
+  transform-origin: 50% 50%;
+  transform: rotate(60deg);
+}
+
+/* line 594, ../sass/screen.scss */
+.Step4:after {
+  content: "";
+  height: 152px;
+  width: 260px;
+  top: 0px;
+  left: -1px;
+  transform-origin: 50% 50%;
+  transform: rotate(-60deg);
+}
+
+/* line 603, ../sass/screen.scss */
+.StepFormImg, .StepFormImg:before, .StepFormImg:after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 260px;
+  height: 152px;
+  border-right: 1px solid #adadad;
+  border-left: 1px solid #adadad;
+}
+
+/* line 612, ../sass/screen.scss */
+.StepFormImg:before {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(60deg);
+}
+
+/* line 617, ../sass/screen.scss */
+.StepFormImg:after {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(-60deg);
+}
+
+/* line 622, ../sass/screen.scss */
+.Step5 {
+  top: 319px;
+  left: 40px;
+}
+/* line 625, ../sass/screen.scss */
+.Step5 span {
+  display: block;
+  width: 110px;
+  height: 3px;
+  background: #fc645f;
+  position: absolute;
+  top: -49px;
+  left: 124px;
+  transform-origin: 50% 50%;
+  transform: rotate(30deg);
+  z-index: 5;
+}
+
+/* line 637, ../sass/screen.scss */
+.StepsFormTitle {
+  font-size: 24px;
+}
+
+/* line 641, ../sass/screen.scss */
+.StepsFormText {
+  text-align: left;
+  margin: 17px auto;
+  width: 77%;
+}
+
+/* line 647, ../sass/screen.scss */
+img[src="images/workingmans.png"] {
+  margin-top: -76px;
+}
+
+/* line 650, ../sass/screen.scss */
+.StepsFormImage, .StepsFormImageBottom {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 2px solid #fc645f;
+  background: #fc645f;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 661, ../sass/screen.scss */
+.StepsFormImage:before, .StepsFormImageBottom:before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 5px;
+  left: 5px;
+  background-image: url("../images/sprite.png");
+  background-position: -72px 0px;
+}
+
+/* line 671, ../sass/screen.scss */
+.Step1 .StepsFormImage:before, .Step1 .StepsFormImageBottom:before {
+  background-image: url("../images/sprite.png");
+  background-position: -50px 0px;
+  top: 5px;
+  left: 7px;
+  width: 20px;
+}
+
+/* line 678, ../sass/screen.scss */
+.Step2 .StepsFormImage:before, .Step2 .StepsFormImageBottom:before {
+  background-image: url("../images/sprite.png");
+  background-position: 0px 0px;
+  top: 7px;
+  left: 5px;
+}
+
+/* line 684, ../sass/screen.scss */
+.Step3 .StepsFormImage:before, .Step3 .StepsFormImageBottom:before {
+  background-image: url("../images/sprite.png");
+  background-position: -25px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+/* line 690, ../sass/screen.scss */
+.LikeImage:before {
+  top: 0px;
+  left: 0px;
+}
+
+/* line 694, ../sass/screen.scss */
+.StepsFormImageBottom {
+  background: #ffffff;
+  top: 225px;
+  left: 131px;
+  z-index: 4;
+}
+
+/* line 701, ../sass/screen.scss */
+.StepsFormImageBottom:before {
+  top: 4px;
+  left: 7px;
+  background-image: url("../images/sprite.png");
+  background-position: -100px 0px;
+}
+
+/* line 707, ../sass/screen.scss */
+.WorkPosition {
+  width: inherit;
+  height: 576px;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+/* line 713, ../sass/screen.scss */
+.WorkLanding, .WorkAdvertising {
+  position: relative;
+}
+
+/* line 716, ../sass/screen.scss */
+.WorkLandingTitle {
+  display: inline-block;
+  margin-top: 20px;
+}
+/* line 720, ../sass/screen.scss */
+.WorkLandingTitle span {
+  color: #fc645f;
+}
+
+/* line 724, ../sass/screen.scss */
+#aboutLink, #portfolioLink, #serviceLink, #contactLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 728, ../sass/screen.scss */
+.WorkLandingDescription, .WorkAdvertisingDescription {
+  border-bottom: 0px;
+  border-left: 7px solid #fc645f;
+  margin-top: 30px;
+  display: inline-block;
+  padding: 3px 0 5px 15px;
+}
+
+/* line 736, ../sass/screen.scss */
+.WorkLandingContent, .WorkAdvertisingContent {
+  width: 945px;
+  height: 400px;
+  margin: 70px auto;
+  background: transparent;
+  text-align: left;
+}
+
+/* line 743, ../sass/screen.scss */
+.WorkLandingContentText, .WorkAdvertisingContentText {
+  text-align: left;
+  width: 400px;
+  line-height: 22px;
+  margin-top: 30px;
+}
+
+/* line 750, ../sass/screen.scss */
+.WorkLandingContentButton, .WorkAdvertisingContentButton {
+  margin-top: 40px;
+  background: #fc645f;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+/* line 757, ../sass/screen.scss */
+.WorkLandingContentImages, .WorkMarketingContentImages, .WorkAdvertisingContentImages {
+  width: 440px;
+  display: block;
+  float: right;
+  margin: -175px 0px 0 0;
+}
+
+/* line 763, ../sass/screen.scss */
+.WorkLandingContentImagesDisplay {
+  z-index: 1;
+}
+
+/* line 766, ../sass/screen.scss */
+.WorkLandingContentImagesMacBook {
+  z-index: 2;
+  margin-left: -475px;
+}
+
+/* line 770, ../sass/screen.scss */
+.WorkLandingContentImagesIpad {
+  z-index: 2;
+  margin-left: 86px;
+}
+
+/* line 774, ../sass/screen.scss */
+.WorkAdvertising {
+  background: #ffffff;
+}
+
+/* line 777, ../sass/screen.scss */
+.WorkMarketing .WorkLandingContent, .WorkMarketing .WorkAdvertisingContent {
+  margin-top: 0px;
+  padding-top: 90px;
+}
+
+/* line 781, ../sass/screen.scss */
+.WorkMarketingContentImages, .WorkAdvertisingContentImages {
+  margin: -175px 70px 0 0;
+}
+
+/* line 785, ../sass/screen.scss */
+.WorkAdvertisingContent {
+  margin-top: 0px;
+  padding-top: 90px;
+  text-align: right;
+}
+
+/* line 791, ../sass/screen.scss */
+.WorkAdvertisingDescription {
+  border-left: 0px;
+  border-right: 7px solid #fc645f;
+  padding: 3px 15px 5px 15px;
+}
+
+/* line 797, ../sass/screen.scss */
+.WorkAdvertisingContentText {
+  text-align: right;
+  margin-left: auto;
+}
+
+/* line 805, ../sass/screen.scss */
+.WorkAdvertisingContentImages {
+  float: left;
+}
+
+/* line 809, ../sass/screen.scss */
+div.WorkBookImage {
+  width: 503px;
+  height: 296px;
+  background: url("../images/WorkDevice.png");
+  overflow: hidden;
+}
+
+/* line 815, ../sass/screen.scss */
+.Portfolio {
+  text-align: center;
+}
+
+/* line 818, ../sass/screen.scss */
+.PortfolioTitle {
+  display: inline-block;
+  margin: 25px auto;
+}
+
+/* line 823, ../sass/screen.scss */
+.PortfolioContent {
+  width: 938px;
+  height: auto;
+  margin: 60px auto 0px;
+}
+
+/* line 828, ../sass/screen.scss */
+.PortfolioContentMenu {
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #adadad;
+  border-bottom: 1px solid #adadad;
+  box-sizing: border-box;
+  display: inline-flex;
+  overflow: scroll;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 841, ../sass/screen.scss */
+.PortfolioContentMenu::-webkit-scrollbar {
+  background: #f2f2f2;
+  height: 10px;
+  display: none;
+}
+
+/* line 846, ../sass/screen.scss */
+.PortfolioContentMenu::-webkit-scrollbar-thumb {
+  background: #fc645f;
+  border-radius: 10%;
+}
+
+/* line 850, ../sass/screen.scss */
+.PortfolioContentMenu::-webkit-scrollbar:vertical {
+  display: none;
+}
+
+/* line 853, ../sass/screen.scss */
+.PortfolioContentMenuList {
+  border-right: 1px solid #adadad;
+  -webkit-transform: skewX(-30deg);
+  -moz-transform: skewX(-30deg);
+  -ms-transform: skewX(-30deg);
+  -o-transform: skewX(-30deg);
+  transform: skewX(-30deg);
+  text-transform: uppercase;
+  display: inline-block;
+  color: #fc645f;
+  padding: 0px 7%;
+  font-size: 20px;
+  font-family: "PFEncoreSansPro-Light", sans-serif, Arial;
+}
+
+/* line 863, ../sass/screen.scss */
+.PortfolioContentMenuListLink {
+  display: block;
+  -webkit-transform: skewX(30deg);
+  -moz-transform: skewX(30deg);
+  -ms-transform: skewX(30deg);
+  -o-transform: skewX(30deg);
+  transform: skewX(30deg);
+  color: #fc645f;
+  text-decoration: none;
+}
+
+/* line 869, ../sass/screen.scss */
+.PortfolioContentMenuListLink:hover {
+  text-decoration: none;
+  color: #fc645f;
+  cursor: pointer;
+}
+
+/* line 874, ../sass/screen.scss */
+li.PortfolioContentMenuList:nth-child(1) {
+  padding-left: 0px;
+}
+
+/* line 877, ../sass/screen.scss */
+li.PortfolioContentMenuList:nth-child(5) {
+  padding-right: 0px;
+  border: 0px;
+}
+
+/* line 881, ../sass/screen.scss */
+.PortfolioContentGallery {
+  width: 100%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* line 888, ../sass/screen.scss */
+.Portfolio .PageDownLink {
+  position: relative;
+  bottom: 0%;
+  margin-top: 2%;
+  padding-bottom: 4%;
+}
+
+/* line 894, ../sass/screen.scss */
+.PortfolioContentGallery div {
+  margin-bottom: 1%;
+}
+
+/* line 897, ../sass/screen.scss */
+.PortfolioButton {
+  width: 192px;
+  background: #fc645f;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: -2%;
+}
+
+/* line 905, ../sass/screen.scss */
+.PortfolioButton:hover {
+  background: transparent;
+  color: #fc645f;
+}
+
+/* line 909, ../sass/screen.scss */
+.TeamTitle {
+  padding-top: 25px;
+  display: inline-block;
+}
+/* line 913, ../sass/screen.scss */
+.TeamTitle span {
+  color: #fc645f;
+}
+
+/* line 917, ../sass/screen.scss */
+.TeamContent {
+  width: 85%;
+  height: auto;
+  background: transparent;
+  margin: 60px auto 0px;
+}
+
+/* line 923, ../sass/screen.scss */
+.TeamContentColumn {
+  height: 100%;
+  background: transparent;
+  float: left;
+}
+
+/* line 928, ../sass/screen.scss */
+.TeamContentColumnImage, .TeamContentColumnImageBowman, .TeamContentColumnImageSteve, .TeamContentColumnImageHelen {
+  width: 147px;
+  height: 171px;
+  margin: 0px auto;
+}
+
+/* line 933, ../sass/screen.scss */
+.TeamContentColumnImageBowman {
+  background-image: url("../images/sprite.png");
+  background-position: 0px 191px;
+}
+
+/* line 938, ../sass/screen.scss */
+.TeamContentColumnImageSteve {
+  background-image: url("../images/sprite.png");
+  background-position: -188px 191px;
+}
+
+/* line 943, ../sass/screen.scss */
+.TeamContentColumnImageHelen {
+  background-image: url("../images/sprite.png");
+  background-position: -380px 191px;
+}
+
+/* line 948, ../sass/screen.scss */
+.TeamContentColumnNames, .TeamPersonalInfoName {
+  margin-top: 10px;
+  font-family: "PFEncoreSansPro-Medium", sans-serif, Arial;
+  font-size: 28px;
+  color: #565656;
+}
+/* line 953, ../sass/screen.scss */
+.TeamContentColumnNames span, .TeamPersonalInfoName span {
+  color: #fc645f;
+}
+
+/* line 957, ../sass/screen.scss */
+.TeamContentColumnDesc, .TeamPersonalInfoJob {
+  margin-top: 10px;
+  font-family: "PFEncoreSansPro-Light", sans-serif, Arial;
+  font-size: 20px;
+  color: #565656;
+}
+
+/* line 964, ../sass/screen.scss */
+.TeamPersonal {
+  width: 800px;
+  height: 200px;
+  position: relative;
+  top: 160px;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 0%);
+  background: transparent;
+}
+/* line 972, ../sass/screen.scss */
+.TeamPersonal div.TeamPersonalFoto {
+  width: 161px;
+  height: 185px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../images/sprite.png");
+  background-position: -596px 191px;
+}
+
+/* line 983, ../sass/screen.scss */
+.TeamPersonalText {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform-origin: 50% 50%;
+  transform: translate(0%, -50%);
+  width: 325px;
+  text-align: right;
+  margin-left: -80px;
+  line-height: 20px;
+}
+
+/* line 994, ../sass/screen.scss */
+.TeamPersonalInfo {
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(0%, -50%);
+  right: 75px;
+}
+
+/* line 1001, ../sass/screen.scss */
+.TeamPersonalInfoName {
+  margin-top: 0px;
+}
+
+/* line 1005, ../sass/screen.scss */
+.TeamPersonalInfoJob {
+  color: #818181;
+}
+
+/* line 1009, ../sass/screen.scss */
+.TeamPersonalButtons {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 0%);
+  width: 120px;
+  height: 50px;
+  background: transparent;
+}
+
+/* line 1018, ../sass/screen.scss */
+.TeamPersonalButtonsToRight, .TeamPersonalButtonsToLeft {
+  margin: 0px 10px;
+}
+
+/* line 1021, ../sass/screen.scss */
+.TeamPersonalButtonsToRight {
+  transform-origin: 50% 50%;
+  transform: rotate(180deg);
+}
+
+/* line 1024, ../sass/screen.scss */
+.TeamPersonalButtonsToRight *:hover, .TeamPersonalButtonsToLeft *:hover {
+  cursor: pointer;
+}
+
+/* line 1027, ../sass/screen.scss */
+.TeamHeader {
+  position: relative;
+  height: auto;
+  background: inherit;
+  padding-bottom: 25px;
+}
+
+/* line 1033, ../sass/screen.scss */
+.TeamHeader .PageDownLink {
+  position: relative;
+  top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 1038, ../sass/screen.scss */
+.TeamFooter {
+  height: 645px;
+  background: #ffffff;
+}
+
+/* line 1043, ../sass/screen.scss */
+.TeamLogo {
+  position: relative;
+  width: 75px;
+  top: 75px;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 0%);
+}
+/* line 1049, ../sass/screen.scss */
+.TeamLogo div {
+  width: 70px;
+  height: 38px;
+  border-right: 4px solid #fe8682;
+  border-left: 4px solid #fe8682;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 4px;
+  background: #fc645f;
+  z-index: 2;
+}
+/* line 1060, ../sass/screen.scss */
+.TeamLogo div p {
+  font-family: "Arial Black";
+  font-size: 82px;
+  color: #ffffff;
+  position: absolute;
+  top: -11px;
+  left: 12px;
+  z-index: 3;
+}
+/* line 1070, ../sass/screen.scss */
+.TeamLogo div:before {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(60deg);
+  display: block;
+  width: 66px;
+  height: 100%;
+  border-right: inherit;
+  border-left: inherit;
+  position: absolute;
+  left: -2px;
+  background: inherit;
+  z-index: 1;
+}
+/* line 1083, ../sass/screen.scss */
+.TeamLogo div:after {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(-60deg);
+  display: block;
+  width: 66px;
+  height: 100%;
+  border-right: inherit;
+  border-left: inherit;
+  position: absolute;
+  left: -2px;
+  background: inherit;
+  z-index: 1;
+}
+
+/* line 1097, ../sass/screen.scss */
+.MapFrame {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+/* line 1102, ../sass/screen.scss */
+.Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 1107, ../sass/screen.scss */
+.FooterLogoContainer {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 1112, ../sass/screen.scss */
+.FooterLogo {
+  transform: scale(1.3);
+}
+
+/* line 1116, ../sass/screen.scss */
+.FooterLogo:before {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(60deg);
+  z-index: 1;
+}
+
+/* line 1122, ../sass/screen.scss */
+.FooterLogo:after {
+  content: "";
+  transform-origin: 50% 50%;
+  transform: rotate(-60deg);
+  z-index: 1;
+}
+
+/* line 1128, ../sass/screen.scss */
+.FooterLogoLetter {
+  position: absolute;
+  width: 100%;
+  top: -1px;
+  left: 1px;
+  z-index: 2;
+  text-align: center;
+  font-family: "PFEncoreSansPro-Bold", sans-serif, Arial;
+  font-size: 36px;
+  color: #0c252d;
+}
+
+/* line 1139, ../sass/screen.scss */
+.FooterLogoName {
+  position: absolute;
+  top: 5px;
+  left: 75px;
+  font-family: "GothaProBol", sans-serif, Arial;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* line 1148, ../sass/screen.scss */
+.TeamFooterLogo {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  box-sizing: border-box;
+  width: 188px;
+  height: 109px;
+  background: #fc635e;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -5px);
+  z-index: 5;
+}
+/* line 1158, ../sass/screen.scss */
+.TeamFooterLogo .TeamFooterLogoTitle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "PFEncoreSansPro-Medium", sans-serif, Arial;
+  font-size: 27px;
+  color: #ffffff;
+  z-index: 5;
+  margin-left: 58px;
+}
+
+/* line 1169, ../sass/screen.scss */
+.TeamFooterLogo:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  border: inherit;
+  width: inherit;
+  height: inherit;
+  transform-origin: 50% 50%;
+  transform: rotate(60deg);
+  background: inherit;
+}
+
+/* line 1181, ../sass/screen.scss */
+.TeamFooterLogo:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  border: inherit;
+  width: inherit;
+  height: inherit;
+  transform-origin: 50% 50%;
+  transform: rotate(-60deg);
+  background: inherit;
+}
+
+/* line 1193, ../sass/screen.scss */
+.TeamFooterLogoBorder {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  box-sizing: border-box;
+  width: 210px;
+  height: 119px;
+  background: #fe8682;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 50%);
+  z-index: 5;
+}
+
+/* line 1205, ../sass/screen.scss */
+.TeamFooterLogoBorder:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  border: inherit;
+  width: inherit;
+  height: inherit;
+  transform-origin: 50% 50%;
+  transform: rotate(60deg);
+  background: inherit;
+}
+
+/* line 1217, ../sass/screen.scss */
+.TeamFooterLogoBorder:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  border: inherit;
+  width: inherit;
+  height: inherit;
+  transform-origin: 50% 50%;
+  transform: rotate(-60deg);
+  background: inherit;
+}
+
+/* line 1230, ../sass/screen.scss */
+.TeamFooterLogoText {
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  font-family: "PFEncoreSansPro-Light", sans-serif, Arial;
+  font-size: 15px;
+  color: #ffffff;
+  z-index: 5;
+  line-height: 25px;
+}
+
+/* line 1240, ../sass/screen.scss */
+.TeamContentColumnSocial {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  height: 40px;
+  background: transparent;
+  margin: 25px auto 0px;
+  fill: #565656;
+}
+/* line 1248, ../sass/screen.scss */
+.TeamContentColumnSocial .TeamContentColumnSocialImage:hover {
+  fill: #fc645f;
+  cursor: pointer;
+}
+
+/* line 1253, ../sass/screen.scss */
+.TeamContentColumnSocialImage {
+  width: 38px;
+  height: 38px;
+  background: inherit;
+}
+/* line 1257, ../sass/screen.scss */
+.TeamContentColumnSocialImage svg {
+  width: 38px;
+  height: 38px;
+}
+
+/* line 1262, ../sass/screen.scss */
+.HeaderContentCenter {
+  margin: 0px auto;
+}
+
+/* line 1265, ../sass/screen.scss */
+.PaddingNoneStyle {
+  padding: 0px;
+}
+
+/* line 1268, ../sass/screen.scss */
+.PortfolioColors {
+  width: 222px;
+  height: 200px;
+  background-image: url("../images/sprite.png");
+  background-position: -471px -75px;
+}
+
+/* line 1274, ../sass/screen.scss */
+.PortfolioColors:after, .PortfolioBus:after, .PortfolioBike:after, .PortfolioPresent:after, .PortfolioList:after, .PortfolioCars:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.5);
+  display: block;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+/* line 1286, ../sass/screen.scss */
+.PortfolioColors:hover::after, .PortfolioBus:hover::after, .PortfolioBike:hover::after, .PortfolioPresent:hover::after, .PortfolioList:hover::after, .PortfolioCars:hover::after {
+  opacity: 1;
+}
+
+/* line 1289, ../sass/screen.scss */
+.PortfolioBus {
+  width: 235px;
+  height: 200px;
+  background-image: url("../images/sprite.png");
+  background-position: -708px -75px;
+}
+
+/* line 1295, ../sass/screen.scss */
+.PortfolioBike {
+  width: 458px;
+  height: 200px;
+  background-image: url("../images/sprite.png");
+  background-position: 0px -75px;
+}
+
+/* line 1301, ../sass/screen.scss */
+.PortfolioPresent {
+  width: 217px;
+  height: 196px;
+  background-image: url("../images/sprite.png");
+  background-position: 0px -283px;
+}
+
+/* line 1307, ../sass/screen.scss */
+.PortfolioList {
+  width: 230px;
+  height: 196px;
+  background-image: url("../images/sprite.png");
+  background-position: -228px -283px;
+}
+
+/* line 1313, ../sass/screen.scss */
+.PortfolioCars {
+  width: 469px;
+  height: 196px;
+  background-image: url("../images/sprite.png");
+  background-position: -470px -283px;
+}
+
+/* line 1320, ../sass/screen.scss */
+.ProcessStepsShadow {
+  position: relative;
+  display: none;
+}
+/* line 1323, ../sass/screen.scss */
+.ProcessStepsShadow .Step1Shadow, .ProcessStepsShadow .Step2Shadow, .ProcessStepsShadow .Step3Shadow, .ProcessStepsShadow .Step4Shadow, .ProcessStepsShadow .Step5Shadow {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 10px;
+}
+/* line 1329, ../sass/screen.scss */
+.ProcessStepsShadow .Step1Shadow, .ProcessStepsShadow .Step2Shadow, .ProcessStepsShadow .Step3Shadow {
+  left: 43px;
+  top: -10px;
+}
+/* line 1333, ../sass/screen.scss */
+.ProcessStepsShadow .Step1:before {
+  width: 173px;
+}
+/* line 1336, ../sass/screen.scss */
+.ProcessStepsShadow .Step1, .ProcessStepsShadow .Step2, .ProcessStepsShadow .Step3, .ProcessStepsShadow .Step4, .ProcessStepsShadow .Step4:before, .ProcessStepsShadow .Step4:after, .ProcessStepsShadow .Step5 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+/* line 1353, ../sass/screen.scss */
+.ProcessStepsShadow .Step5 {
+  transform: translateY(100px);
+}
+/* line 1356, ../sass/screen.scss */
+.ProcessStepsShadow .Step4:before, .ProcessStepsShadow .Step4:after {
+  top: 0px;
+  left: 0px;
+}
+
+/* line 1361, ../sass/screen.scss */
+.transition, .Consult, .ConsultContainerContentMenu a, .PortfolioExamples div strong, .littleimage {
+  transition-property: all;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+/* line 1366, ../sass/screen.scss */
+.Consult {
+  width: 300px;
+  height: 100%;
+  overflow-y: scroll;
+  background: #161e2c;
+  position: fixed;
+  bottom: 0px;
+  right: -300px;
+  z-index: 10;
+}
+
+/* line 1377, ../sass/screen.scss */
+.ConsultContainer {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 1382, ../sass/screen.scss */
+.ConsultContainerHeader {
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 10%;
+}
+
+/* line 1388, ../sass/screen.scss */
+.ConsultContainerHeader strong {
+  font-size: 1.2em;
+  color: white;
+  font-family: "PFEncoreSansPro-Medium", Arial,sans-serif;
+}
+/* line 1392, ../sass/screen.scss */
+.ConsultContainerHeader strong span {
+  color: #fc645f;
+}
+
+/* line 1396, ../sass/screen.scss */
+.ConsultContainerHeaderTitle {
+  color: white;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "PFEncoreSansPro-Bold", Arial, sans-serif;
+}
+
+/* line 1404, ../sass/screen.scss */
+.ConsultContainerHeaderAvatar {
+  background-image: url(../images/sprite.png);
+  background-position: -188px 191px;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
+  width: 150px;
+  height: 170px;
+  margin: 0px auto;
+}
+
+/* line 1412, ../sass/screen.scss */
+.ConsultContainerContentMenu {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* line 1417, ../sass/screen.scss */
+.ConsultContainerContentMenu a {
+  cursor: pointer;
+  box-sizing: inherit;
+  border-left: 4px solid transparent;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  padding: 4% 15% 13% 12%;
+  text-decoration: none;
+  display: block;
+  font-family: "PFEncoreSansPro-Thin", Arial, sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  letter-spacing: 2px;
+  transition-duration: .5s;
+}
+/* line 1433, ../sass/screen.scss */
+.ConsultContainerContentMenu a .glyphicon {
+  padding-right: 10%;
+}
+
+/* line 1439, ../sass/screen.scss */
+.ConsultContainerContentMenu a:hover {
+  border-left: 4px solid #139ff0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* line 1443, ../sass/screen.scss */
+.ConsultContainerContentWidget {
+  display: none;
+}
+
+/* line 1446, ../sass/screen.scss */
+.ConsultContainerContentTextField {
+  background: #fff;
+  width: 96%;
+  height: 270px;
+  border-radius: 7px;
+  border: 2px solid #fc645f;
+  margin: 0px auto;
+  overflow-y: scroll;
+}
+
+/* line 1455, ../sass/screen.scss */
+.ConsultContainerContentInput {
+  width: 96%;
+  height: 65px;
+  box-sizing: border-box;
+  resize: none;
+  border: 2px solid #139ff0;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: block;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* line 1471, ../sass/screen.scss */
+.comment_bubble, .comment_bubble_reverse {
+  width: 80%;
+  height: auto;
+  margin: 5px auto;
+  background: #fc645f;
+  position: relative;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 4px;
+  padding: 2px 10px;
+  min-height: 50px;
+  font-style: italic;
+  font-family: Arial;
+  color: #fff;
+}
+
+/* line 1486, ../sass/screen.scss */
+.comment_bubble:before, .comment_bubble_reverse:before {
+  content: "";
+  width: 0;
+  height: 0;
+  right: 99%;
+  top: 40%;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-right: 18px solid #fc645f;
+  border-bottom: 10px solid transparent;
+}
+
+/* line 1501, ../sass/screen.scss */
+.comment_bubble_reverse:before {
+  transform-origin: 50% 50%;
+  transform: rotate(180deg);
+  right: -18px;
+}
+
+/* line 1510, ../sass/screen.scss */
+.WidgetSendButton, .WidgetCloseButton {
+  width: 40%;
+  border-radius: 3px;
+  background: #fc645f;
+  height: 35px;
+  font-family: "PFEncoreSansPro-Light", Arial, sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  border: 0px;
+}
+
+/* line 1520, ../sass/screen.scss */
+#widgetSendButton span, #widgetCloseButton span {
+  margin-right: 10px;
+  top: 4px;
+}
+
+/* line 1524, ../sass/screen.scss */
+.WidgetCloseButton {
+  background: #139ff0;
+}
+
+/* line 1528, ../sass/screen.scss */
+.WidgetButtonContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* line 1534, ../sass/screen.scss */
+.OpenButton {
+  width: 50px;
+  height: 75px;
+  background: #fc645f;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  color: white;
+  font-family: "PFEncoreSansPro-Bold";
+  font-size: 30px;
+  border: transparent;
+}
+
+/* line 1548, ../sass/screen.scss */
+#player {
+  width: 390px;
+  height: 273px;
+  display: none;
+  margin-left: 54px;
+  padding-top: 3px;
+}
+
+/* line 1555, ../sass/screen.scss */
+.ChangeAvatarConteiner {
+  width: 100%;
+  height: 300%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  z-index: 25;
+}
+
+/* line 1565, ../sass/screen.scss */
+.ConsultContainerHeaderChangeAvatar {
+  width: 500px;
+  height: 260px;
+  background: #6287ae;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  text-align: center;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* line 1577, ../sass/screen.scss */
+.ChangeAvatarForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* line 1583, ../sass/screen.scss */
+.ChangeAvatarFoto {
+  height: 171px;
+  width: 30%;
+  border-radius: 10px;
+  background-image: url(../images/sprite.png);
+}
+
+/* line 1589, ../sass/screen.scss */
+.BowmanFoto {
+  background-position: 0px 191px;
+}
+
+/* line 1592, ../sass/screen.scss */
+.TracyFoto {
+  background-position: -188px 191px;
+}
+
+/* line 1595, ../sass/screen.scss */
+.HelenFoto {
+  background-position: -380px 191px;
+}
+
+/* line 1598, ../sass/screen.scss */
+.BowmanFoto:hover, .TracyFoto:hover, .HelenFoto:hover {
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* line 1601, ../sass/screen.scss */
+label input {
+  opacity: 0;
+}
+
+/* line 1604, ../sass/screen.scss */
+#changeAvatarButton {
+  width: 120px;
+  height: 35px;
+  background: #5fb053;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-family: "PFEncoreSansPro-Medium", Arial;
+  color: #fff;
+  margin-top: 20px;
+  border: 0px;
+}
+
+/* line 1615, ../sass/screen.scss */
+.closeButon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform-origin: 50% 50%;
+  transform: translate(50%, -50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.4em;
+  font-family: Arial;
+  color: #ffffff;
+  border: 0px;
+}
+
+/* line 1628, ../sass/screen.scss */
+.PortfolioContainer {
+  width: 80%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 100px;
+  left: 40%;
+  text-align: center;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 0%);
+  min-width: 500px;
+  max-width: 700px;
+  border-radius: 30px;
+  display: none;
+}
+
+/* line 1642, ../sass/screen.scss */
+.PortfolioCloseButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  border: 0px;
+  font-family: Arial, sans-serif;
+  font-size: 1.35em;
+  color: #fff;
+  opacity: .2;
+}
+
+/* line 1656, ../sass/screen.scss */
+.PortfolioCloseButton:hover {
+  border: 2px solid #fff;
+  opacity: 1;
+  background: rgba(244, 6, 6, 0.44);
+}
+
+/* line 1661, ../sass/screen.scss */
+.PortfolioContainer h2 {
+  font-family: "PFEncoreSansPro-Bold", Arial, sans-serif;
+  font-size: 1.6em;
+  color: #fc645f;
+  text-transform: uppercase;
+  padding-top: 25px;
+}
+
+/* line 1668, ../sass/screen.scss */
+.PortfolioExamples {
+  display: flex;
+  width: 100%;
+  padding: 25px 5%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 1676, ../sass/screen.scss */
+.PortfolioExamples div {
+  width: 40%;
+  height: 40%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* line 1682, ../sass/screen.scss */
+.PortfolioExamples div strong {
+  font-size: 1.4em;
+  color: #fff;
+  font-family: "PFEncoreSansPro-Thin", Arial, sans-serif;
+  font-style: italic;
+}
+
+/* line 1689, ../sass/screen.scss */
+.littleimage {
+  width: 182px;
+  height: 130px;
+  display: block;
+  margin: 5px auto;
+  opacity: 0.5;
+}
+
+/* line 1697, ../sass/screen.scss */
+.littleimage:hover {
+  opacity: 1;
+}
+
+/* line 1700, ../sass/screen.scss */
+.PortfolioExamples div:hover > strong {
+  margin-left: 30px;
+}
+
+/* line 1703, ../sass/screen.scss */
+.PortfolioExamples div:hover > a > img {
+  border-radius: 10px;
+}
+
+/* line 1706, ../sass/screen.scss */
+.user_info {
+  background: #fff;
+}
+
+/* line 1710, ../sass/screen.scss */
+.RegisterContainer, .MenuProfileContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 300%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 25;
+}
+
+/* line 1720, ../sass/screen.scss */
+.RegisterForm {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 0%);
+  width: 50%;
+  height: auto;
+  background: #f7f8fa;
+}
+/* line 1729, ../sass/screen.scss */
+.RegisterForm p {
+  color: #939393;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+}
+/* line 1733, ../sass/screen.scss */
+.RegisterForm input {
+  border-radius: 5px;
+  border: 2px solid #d3d9de;
+  padding-left: 10px;
+  height: 30px;
+  color: #a18282;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 1em;
+}
+/* line 1742, ../sass/screen.scss */
+.RegisterForm input[type="text"] {
+  display: block;
+  margin: 10px auto;
+}
+/* line 1746, ../sass/screen.scss */
+.RegisterForm input[type="number"] {
+  display: inline-block;
+  width: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 1752, ../sass/screen.scss */
+.RegisterForm textarea {
+  resize: none;
+  width: 80%;
+  height: 150px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+/* line 1761, ../sass/screen.scss */
+.RegisterButton, #profileCloseButton {
+  width: 200px;
+  height: 35px;
+  border: 0px;
+  border-radius: 5px;
+  background: #5fb053;
+  margin: 20px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+  color: #fff;
+  font-size: 1em;
+}
+
+/* line 1773, ../sass/screen.scss */
+.RegisterForm .RegisterHeader {
+  display: block;
+  background: #6287ae;
+  height: 60px;
+  line-height: 55px;
+  color: #fff;
+  font-size: 1.4em;
+}
+
+/* line 1781, ../sass/screen.scss */
+.MenuProfileContainer {
+  display: none;
+}
+
+/* line 1785, ../sass/screen.scss */
+.MenuProfileForm {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, 0%);
+  width: 50%;
+  height: auto;
+  background: #f7f8fa;
+}
+
+/* line 1795, ../sass/screen.scss */
+.ProfileFormHeader {
+  display: block;
+  background: #6287ae;
+  height: 60px;
+  line-height: 55px;
+  color: #fff;
+  font-size: 1.4em;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+}
+
+/* line 1804, ../sass/screen.scss */
+.TableInfo {
+  width: 80%;
+  color: #9393a3;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+  margin: 10px auto;
+  border-collapse: separate;
+  border-spacing: 45px 15px;
+}
+
+@media screen and (max-width: 760px) {
+  /* line 1821, ../sass/screen.scss */
+  .HeaderNavbarMenuContainer {
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 20px;
+  }
+
+  /* line 1827, ../sass/screen.scss */
+  .HeaderNavbarMenuContainer li {
+    display: block;
+  }
+
+  /* line 1830, ../sass/screen.scss */
+  .HeaderContent {
+    width: 100%;
+  }
+
+  /* line 1833, ../sass/screen.scss */
+  .HeaderContentTitle:before, .HeaderContentTitle:after, .HeaderContentMouseMoove, .HeaderContentMouse {
+    display: none;
+  }
+
+  /* line 1836, ../sass/screen.scss */
+  .Service, .ServiceContainerList {
+    height: auto;
+    width: 100%;
+    margin: 0px 0 0 0;
+  }
+
+  /* line 1841, ../sass/screen.scss */
+  .ServiceContainerList .ServiceContainerListContent {
+    display: block;
+    margin: 60px auto;
+    border: 0px;
+  }
+
+  /* line 1846, ../sass/screen.scss */
+  .ServiceContainerListContent:nth-child(1):hover, .ServiceContainerListContent:nth-child(2):hover, .ServiceContainerListContent:nth-child(3):hover, .ServiceContainerListContent:nth-child(4):hover {
+    border-bottom: 0px;
+  }
+
+  /* line 1849, ../sass/screen.scss */
+  .Service .PageDownLink {
+    position: relative;
+    top: 250px;
+  }
+
+  /* line 1853, ../sass/screen.scss */
+  .ServiceComtainer {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 1857, ../sass/screen.scss */
+  .ServiceComtainerTitle {
+    padding-bottom: 0px;
+    line-height: 40px;
+  }
+
+  /* line 1861, ../sass/screen.scss */
+  .JoinContent {
+    width: 100%;
+  }
+
+  /* line 1864, ../sass/screen.scss */
+  .JoinContentTitle {
+    margin-top: 15%;
+  }
+
+  /* line 1867, ../sass/screen.scss */
+  .JoinContentButton {
+    position: relative;
+    top: 10px;
+  }
+
+  /* line 1871, ../sass/screen.scss */
+  .ProcessStepsShadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    height: auto;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  /* line 1882, ../sass/screen.scss */
+  .ProcessSteps {
+    display: none;
+  }
+
+  /* line 1885, ../sass/screen.scss */
+  .Process {
+    height: auto;
+  }
+  /* line 1887, ../sass/screen.scss */
+  .Process .PageDownLink {
+    position: relative;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 1897, ../sass/screen.scss */
+  .HeaderNavbarLogoContent {
+    left: 35px;
+  }
+
+  /* line 1900, ../sass/screen.scss */
+  .HeaderNavbarMenuContainer {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 950px) {
+  /* line 1906, ../sass/screen.scss */
+  .TeamFooter {
+    height: auto;
+  }
+
+  /* line 1909, ../sass/screen.scss */
+  .PortfolioContent {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* line 1915, ../sass/screen.scss */
+  .WorkLandingContentImages, .WorkMarketingContentImages, .WorkAdvertisingContentImages {
+    float: none;
+    margin-top: 35px;
+    width: auto;
+  }
+
+  /* line 1920, ../sass/screen.scss */
+  .WorkLandingContent, .WorkAdvertisingContent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+  }
+
+  /* line 1930, ../sass/screen.scss */
+  .WorkLandingContentButton, .WorkAdvertisingContentButton {
+    margin-bottom: 25px;
+  }
+
+  /* line 1933, ../sass/screen.scss */
+  .WorkAdvertisingContentText {
+    margin-left: 0px;
+  }
+
+  /* line 1936, ../sass/screen.scss */
+  .WorkLandingContentImagesDisplay {
+    width: 200px;
+  }
+
+  /* line 1939, ../sass/screen.scss */
+  .WorkLandingContentImagesMacBook, .WorkLandingContentImagesIpad {
+    display: none;
+  }
+
+  /* line 1942, ../sass/screen.scss */
+  .WorkPosition {
+    height: auto;
+  }
+
+  /* line 1945, ../sass/screen.scss */
+  .WorkBookImage {
+    width: 200px;
+  }
+
+  /* line 1948, ../sass/screen.scss */
+  .WorkAdvertisingContentImages, .WorkMarketingContentImages, .WorkAdvertisingContentImages {
+    margin: 35px 0 0 0;
+  }
+
+  /* line 1951, ../sass/screen.scss */
+  .WorkMarketing .WorkLandingContent, .WorkMarketing .WorkAdvertisingContent, .WorkMarketing .WorkAdvertisingContent, .WorkAdvertisingContent {
+    padding-top: 25px;
+  }
+}
+@media screen and (max-width: 630px) {
+  /* line 1956, ../sass/screen.scss */
+  .WorkLandingContentText, .WorkAdvertisingContentText, .WorkAdvertisingContentText {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 1962, ../sass/screen.scss */
+  .PortfolioContentMenuList {
+    padding: 0px 3%;
+  }
+}
+@media screen and (max-width: 1333px) {
+  /* line 1967, ../sass/screen.scss */
+  .PortfolioContentGallery {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 1290px) {
+  /* line 1972, ../sass/screen.scss */
+  .PortfolioContentMenu::-webkit-scrollbar {
+    display: block;
+  }
+}
+@media screen and (max-width: 970px) {
+  /* line 1977, ../sass/screen.scss */
+  .TeamPersonal {
+    width: 800px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, 0%);
+    background: transparent;
+  }
+
+  /* line 1988, ../sass/screen.scss */
+  .TeamLogo {
+    margin-bottom: 140px;
+  }
+
+  /* line 1991, ../sass/screen.scss */
+  .TeamPersonalText {
+    position: static;
+    top: 0;
+    display: inline-block;
+    left: 0;
+    transform: translate(0%, 0%);
+    width: 325px;
+    text-align: center;
+    margin-left: 0px;
+    line-height: 20px;
+  }
+
+  /* line 2002, ../sass/screen.scss */
+  .TeamPersonal div.TeamPersonalFoto {
+    width: 161px;
+    height: 185px;
+    display: block;
+    position: static;
+    top: 0;
+    margin: 25px auto;
+    left: 0;
+    transform: translate(0%, 0%);
+  }
+
+  /* line 2012, ../sass/screen.scss */
+  .TeamPersonalInfo {
+    float: none;
+    position: static;
+    top: 0;
+    margin-top: 20px;
+    transform: translate(0%, 0%);
+    right: 0;
+  }
+
+  /* line 2020, ../sass/screen.scss */
+  .TeamPersonalButtons {
+    position: relative;
+    bottom: -20px;
+    left: 50%;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, 0%);
+    width: 120px;
+    height: 50px;
+    background: transparent;
+    padding-bottom: 200px;
+  }
+}
